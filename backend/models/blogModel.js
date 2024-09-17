@@ -17,7 +17,7 @@ const blogSchema = new mongoose.Schema({
   },
 
   date: {
-    type: Date,
+    type: String,
     required: true,
   },
   author: {
@@ -26,5 +26,5 @@ const blogSchema = new mongoose.Schema({
   },
 });
 
-const Blog=mongoose.model('blog', blogSchema);
+const Blog = mongoose.model('blog', blogSchema);
 export default Blog;
