@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-const BLOGS_URL ='https://albearoti-1.onrender.com/api/blog'; //'http://localhost:8000/api/blog';
+const BLOGS_URL = 'http://localhost:8000/api/blog';
 
 const initialState = {
   blogs: [],

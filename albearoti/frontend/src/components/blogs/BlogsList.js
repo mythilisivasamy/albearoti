@@ -19,10 +19,9 @@ const BlogsList = () => {
   };
   return (
     <div className="row container-fluid">
-      {blogs &&
-        blogs.map((blog) => (
-          <BlogExcerpt blog={blog} key={blog._id} handleDelete={handleDelete} />
-        ))}
+      {blogs.map((blog) => (
+        <BlogExcerpt blog={blog} key={blog._id} handleDelete={handleDelete} />
+      ))}
     </div>
   );
 };

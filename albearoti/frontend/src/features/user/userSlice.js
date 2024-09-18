@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-const USER_URL = 'https://albearoti-1.onrender.com/api/auth'; // 'http://localhost:8000/api/auth';
+const USER_URL = 'http://localhost:8000/api/auth';
 if (localStorage.getItem('userInfo') === 'undefined') {
   localStorage.setItem('userInfo', '');
 }
@@ -89,5 +89,5 @@ export const selectUserStatusCode = (state) => state.user.statusCode;
 export const selectUserInfo = (state) => state.user.userInfo;
 export const selectEmail = (state) => state.user.email;
 export const selectPassword = (state) => state.user.password;
-export const { setToken, signout, setStatus } = usersSlice.actions;
+export const { setToken, signout,setStatus } = usersSlice.actions;
 export default usersSlice.reducer;
